@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header id="home">
+            <h1>Vamsi Bobbili</h1>
+            <p class="subtitle">Computer Science Student | Web Developer | Tech Enthusiast</p>
+        </header>
+
+        <div id="mainNav" class="nav-buttons">
+            <button class="nav-btn" onclick="showSection('about')">
+                <h2>👤 About Me</h2>
+                <p>Learn more about my journey</p>
+            </button>
+            <button class="nav-btn" onclick="showSection('projects')">
+                <h2>💼 Projects</h2>
+                <p>Check out my work</p>
+            </button>
+            <button class="nav-btn" onclick="showSection('skills')">
+                <h2>🚀 Skills</h2>
+                <p>My technical expertise</p>
+            </button>
+            <button class="nav-btn" onclick="showSection('education')">
+                <h2>🎓 Education</h2>
+                <p>Academic background</p>
+            </button>
+            <button class="nav-btn" onclick="showSection('contact')">
+                <h2>📧 Contact</h2>
+                <p>Get in touch with me</p>
+            </button>
+        </div>
+
+        <div id="about" class="section">
+            <button class="back-btn" onclick="showHome()">← Back</button>
+            <h2>About Me</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+                Hello! I'm a passionate Computer Science student with a keen interest in web development and software engineering. 
+                I love creating innovative solutions and learning new technologies. My goal is to contribute to impactful projects 
+                that make a difference in people's lives. When I'm not coding, you can find me exploring new tech trends, 
+                reading about AI, or contributing to open-source projects.
+            </p>
+        </div>
+
+        <div id="projects" class="section">
+            <button class="back-btn" onclick="showHome()">← Back</button>
+            <h2>My Projects</h2>
+            
+            <div class="project-card">
+                <h3>E-Commerce Website</h3>
+                <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                <p>A fully functional e-commerce platform with user authentication, product management, and payment integration. 
+                Features include shopping cart, wishlist, and order tracking.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p><strong>Technologies:</strong> Vue.js, Firebase, Tailwind CSS</p>
+                <p>A collaborative task management application that helps teams organize their work. 
+                Includes real-time updates, deadline reminders, and progress tracking.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather Dashboard</h3>
+                <p><strong>Technologies:</strong> JavaScript, API Integration, CSS</p>
+                <p>An interactive weather dashboard that displays current weather conditions and forecasts. 
+                Features location-based weather data and beautiful visualizations.</p>
+            </div>
+        </div>
+
+        <div id="skills" class="section">
+            <button class="back-btn" onclick="showHome()">← Back</button>
+            <h2>Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Advanced proficiency</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Strong understanding</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <p>Intermediate level</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Good command</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Version control expert</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Node.js</h3>
+                    <p>Backend development</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="section">
+            <button class="back-btn" onclick="showHome()">← Back</button>
+            <h2>Education</h2>
+
+            <div class="education-card">
+                <h3>Diploma in Computer Science</h3>
+                <p><strong>kakinada institute of engineering and technol</strong> | 2022 - 2025</p>
+                <p>percentage: 76%</p>
+                <p>Relevant Coursework: Basics of this python,java,c++,html
+                </p>
+            </div>
+            
+            <div class="education-card">
+                <h3>Bachelor of Science in Computer Science AI & ML</h3>
+                <p><strong>kakinada institute of engineering and technol</strong> | 2025 - 2028</p>
+                <p>GPA: 3.8/4.0</p>
+                <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management, 
+                Software Engineering, Artificial Intelligence</p>
+            </div>
+
+            <div class="education-card">
+                <h3>Certifications</h3>
+                <p>• Full Stack Web Development - Online Course (2023)</p>
+                <p>• JavaScript Advanced Concepts - Udemy (2023)</p>
+                <p>• React Developer Certification - freeCodeCamp (2024)</p>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <button class="back-btn" onclick="showHome()">← Back</button>
+            <h2>Contact Me</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>vamsibobili33@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+91 8897552884</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <strong>LinkedIn</strong>
+                         <p>Click on the following link</p>
+                        <a href="https://www.linkedin.com/in/vamsi-bobbili-94b9b62ab">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💻</div>
+                    <div>
+                        <strong>GitHub</strong>
+                       <p>Click on the following link</p>
+                        <a href="https://github.com/Vamsi-020">
+                         github
+                          </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <strong>kakinada</strong>
+                        <p>Andhra Pradesh, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+</body>
+</html>
