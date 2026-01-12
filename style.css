@@ -22,6 +22,36 @@
             padding: 40px 20px;
             animation: fadeIn 1s ease-in;
         }
+         .profile-pic {
+         width: 180px;
+         height: 180px;                 
+         object-position: top center;   
+         border: 5px solid #f3f9f3;    
+         border-radius: 16px;
+  
+         padding: 6px;                     
+         margin-bottom: 15px;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+       }
+        .profile-pic:hover {
+         transform: scale(1.05);
+       }
+
+        .animated {
+        animation: smoothLoad 1.8s ease forwards;
+       }
+
+        @keyframes smoothLoad {
+        0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.85);
+      }
+        100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
 
         h1 {
             font-size: 3em;
@@ -192,4 +222,5 @@
             h1 { font-size: 2em; }
             .nav-buttons { grid-template-columns: 1fr; }
             .section { padding: 20px; }
+
         }
